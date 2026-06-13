@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-section {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  padding: 40px;
+}
+
+.content-card {
+  width: 820px;
+  background: #f8f8f8;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  padding: 18px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  line-height: 1.05;
+  font-weight: 300;
+  color: #4a3939;
+
+  margin-bottom: 40px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #4b3d3d;
+
+  max-width: 360px;
+  margin-bottom: 28px;
+  font-family: "Heebo", sans-serif;
+}
+
+.text-content button {
+  width: 200px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #7b1f11;
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.text-content button:hover {
+  transform: translateY(-2px);
+}
+
+.image-content {
+  flex-shrink: 0;
+}
+
+.image-content img {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========================= */
+/* Mobile Design */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .home-section {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content-card {
+    width: 100%;
+    max-width: 500px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+    gap: 28px;
+  }
+
+  .text-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .text-content button {
+    width: 220px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .image-content {
+    width: 100%;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: 350px;
+    display: block;
+  }
+}

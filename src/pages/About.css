@@ -1,0 +1,272 @@
+.about-page {
+  background: #f5efe8;
+  color: #3b241c;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 720px;
+  background: linear-gradient(
+    90deg,
+    #7d6a5b 0%,
+    #a08a79 40%,
+    #c0ad9c 100%
+  );
+}
+
+.hero-content {
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content span {
+  letter-spacing: 4px;
+  font-size: 13px;
+  color: #d2ab7d;
+}
+
+.hero-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6rem;
+  line-height: 0.95;
+  font-weight: 300;
+  margin: 25px 0;
+  color: #f3ece5;
+}
+
+.hero-content p {
+  max-width: 500px;
+  color: #efe5dc;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.hero-content button {
+  width: fit-content;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  background: #8f1f0d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= GRID ================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px 1fr;
+}
+
+.story-section {
+  background: #f5efe8;
+  padding: 80px;
+}
+
+.story-section span {
+  color: #b18357;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.story-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.story-section p {
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.arch-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5efe8;
+}
+
+.arch-image img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+}
+
+.values-section {
+  background: linear-gradient(
+    135deg,
+    #3d241c,
+    #5b3428,
+    #3d241c
+  );
+  color: white;
+  padding: 80px 60px;
+}
+
+.values-section span {
+  color: #d6a97b;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.value-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: 300;
+}
+
+.value-card p {
+  line-height: 1.8;
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #d6a97b;
+}
+
+/* ================= QUOTE ================= */
+
+.quote-banner {
+  background: linear-gradient(
+    135deg,
+    #2e1913,
+    #4b2c22
+  );
+  color: white;
+  padding: 70px;
+}
+
+.quote-banner p {
+  max-width: 700px;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ================= BOTTOM ================= */
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-cta {
+  background: #4a281f;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-cta span {
+  color: #d6a97b;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.bottom-cta h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  line-height: 1;
+  margin: 20px 0 40px;
+  font-weight: 300;
+}
+
+.bottom-cta button {
+  width: fit-content;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  background: #8f1f0d;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding: 60px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-section {
+    padding: 50px 30px;
+  }
+
+  .story-section h2 {
+    font-size: 3rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-cta {
+    padding: 50px 30px;
+  }
+
+  .bottom-cta h2 {
+    font-size: 3rem;
+  }
+
+  .quote-banner {
+    padding: 40px 30px;
+  }
+
+  .quote-banner p {
+    font-size: 1.5rem;
+  }
+}

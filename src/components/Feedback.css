@@ -1,0 +1,139 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  min-height: 100vh;
+  background: #f3dfbc;
+}
+
+.feedback-content {
+  padding: 20px 20px 20px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 78px;
+  font-weight: 300;
+  color: #493839;
+  line-height: 0.9;
+  margin-bottom: 80px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.review {
+  margin-bottom: 70px;
+}
+
+.client-name {
+  font-size: 16px;
+  color: #493839;
+  margin-bottom: 12px;
+}
+
+.client-review {
+  color: #493839;
+  font-size: 24px;
+  line-height: 1.12;
+  max-width: 520px;
+  font-family: "Heebo", sans-serif;
+}
+
+.feedback-image {
+  height: 100%;
+}
+
+.feedback-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =====================
+   TABLET
+===================== */
+
+@media (max-width: 1024px) {
+  .feedback-content h2 {
+    font-size: 64px;
+  }
+
+  .client-review {
+    font-size: 21px;
+  }
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 768px) {
+  .feedback {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-content {
+    padding: 35px 30px 10px;
+  }
+
+  .feedback-content h2 {
+    font-size: 62px;
+    line-height: 0.95;
+    margin-bottom: 50px;
+  }
+
+  .review {
+    margin-bottom: 55px;
+  }
+
+  .client-name {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .client-review {
+    font-size: 28px;
+    line-height: 1.08;
+    max-width: 100%;
+  }
+
+  .feedback-image {
+    padding: 0 30px 30px;
+  }
+
+  .feedback-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/* =====================
+   SMALL MOBILE
+===================== */
+
+@media (max-width: 480px) {
+  .feedback-content {
+    padding: 35px 30px 10px;
+  }
+
+  .feedback-content h2 {
+    font-size: 54px;
+  }
+
+  .client-review {
+    font-size: 25px;
+  }
+
+  .feedback-image img {
+    height: 500px;
+  }
+}

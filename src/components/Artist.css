@@ -1,0 +1,134 @@
+.artists-section {
+  background: #f4efe8;
+  padding: 10px 58px 40px;
+}
+
+.artists-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.artists-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+  color: #4f3b3b;
+  margin-bottom: 10px;
+}
+
+.artists-header p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #4f3b3b;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.artist-card img {
+  width: 100%;
+  aspect-ratio: 1/1.18;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.artist-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 300;
+  color: #4f3b3b;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.artist-card span {
+  color: #4f3b3b;
+  font-size: 16px;
+  display: block;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 1024px) {
+  .artists-grid {
+    gap: 40px;
+  }
+
+  .artists-header h2 {
+    font-size: 60px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .artists-section {
+    padding: 50px 32px;
+  }
+
+  .artists-header {
+    margin-bottom: 70px;
+  }
+
+  .artists-header h2 {
+    font-size: 58px;
+    margin-bottom: 16px;
+  }
+
+  .artists-header p {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .artists-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .artist-card img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .artist-card h3 {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .artist-card span {
+    font-size: 18px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .artists-section {
+    padding: 45px 32px;
+  }
+
+  .artists-header h2 {
+    font-size: 54px;
+  }
+
+  .artists-header p {
+    font-size: 17px;
+  }
+
+  .artist-card h3 {
+    font-size: 38px;
+  }
+}

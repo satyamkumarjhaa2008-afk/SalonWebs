@@ -1,0 +1,159 @@
+.footer {
+  background: #4F1F17;
+  color: white;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-socials,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-socials a,
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-hours {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-center {
+  text-align: center;
+  margin: auto 0;
+}
+
+.footer-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 92px;
+  font-weight: 300;
+  line-height: 1;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.footer-email {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.footer-phone {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.social-icon {
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+.footer-address {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .footer {
+    min-height: auto;
+    padding: 50px 20px 30px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-socials,
+  .footer-links {
+    align-items: center;
+    text-align: center;
+      flex-direction: row;
+  
+    gap: 14px;
+  }
+
+  .footer-socials a,
+  .footer-links a {
+    font-size: 18px;
+  }
+
+  .footer-hours {
+    font-size: 18px;
+  }
+
+  .footer-center {
+    margin-top: 40px;
+  }
+
+  .footer-logo {
+    font-size: 72px;
+    margin-bottom: 25px;
+  }
+
+  .footer-email,
+  .footer-phone,
+  .footer-address {
+    font-size: 18px;
+  }
+
+  .footer-address {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    font-size: 64px;
+  }
+
+  .footer-email,
+  .footer-phone,
+  .footer-address {
+    font-size: 17px;
+  }
+
+  .footer-bottom {
+    font-size: 15px;
+  }
+}
