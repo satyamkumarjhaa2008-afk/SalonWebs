@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import "./accessibility.css";
+import "./Accessibility.css";
 import Footer from "../components/Footer";
 
 
