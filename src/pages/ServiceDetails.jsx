@@ -4,7 +4,7 @@ import { Heart, Share2 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import services from "../data/servicesData.js";
+import services from "../data/ServicesData.js";
 
 import "./ServiceDetails.css";
 
